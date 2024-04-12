@@ -31,4 +31,10 @@ footer {
 .container button {
     margin-bottom: 2.5%;
     padding: 10px 20px;
+    width: 100px;
+    font-family: "Inknut Antiqua", serif;
+}
+
+.results {
+    
 }
