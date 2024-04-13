@@ -49,7 +49,7 @@ function playGame(userChoice) {
         outcome = "You lose!";
     }
 
-    console.log(outcome)
+    //console.log(outcome)
     outcomeSpan.textContent = outcome;
 
 
