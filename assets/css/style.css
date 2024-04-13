@@ -5,15 +5,20 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+    position: relative;
+}
 body {
     background: #E0B4B4;
 }
 
 h1 {
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 20px;
     font-size: 300%;
-    font-family: "Raleway", sans-serif;
+    font-family: "Inknut Antiqua", serif;
 }
 
 footer {
@@ -25,7 +30,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    flex-direction: column;
 }
 
 .container button {
@@ -35,6 +39,32 @@ footer {
     font-family: "Inknut Antiqua", serif;
 }
 
-.results {
-    
+.result {
+    text-align: center;
+}
+
+.game-area {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.choice {
+    display: flex;
+}
+
+.choice img {
+    height: 250px;
+}
+
+.choice h3 {
+    text-align: center;
+}
+
+.user {
+
+}
+
+.computer {
+
 }
