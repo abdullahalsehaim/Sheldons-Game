@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to CSS Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Sheldon's Game</title>
 </head>
 <body>
   <h1>Sheldon's Game</h1>
+  <!--Main game area that shows user choice and the computer choice-->
   <section class="game-area">
     <div class="choice">
       <div class="user">
@@ -20,10 +22,12 @@
       </div>
     </div>
   </section>
+  <!--Result section that shows score and a message-->
   <div class="result">
     <h2>Score: <span id="score">0</span></h3>
     <h3><span id="outcome"></span></h3>
   </div>
+  <!--Buttons that the user will play the game with-->
   <div class="container">
       <button data-choice="0" class="btn">Rock</button>
       <button data-choice="1" class="btn">Paper</button>
@@ -31,6 +35,50 @@
       <button data-choice="3" class="btn">Spock</button>
       <button data-choice="4" class="btn">Lizard</button>
    </div>
+<!--Link to JS Sheet-->
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Game Rules</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Rock, Paper, Scissors, Lizard, Spock: How to Play!
+      Ready to throw down in an epic game that combines classic fun with a touch of sci-fi? Buckle up, because Rock, Paper, Scissors, Lizard, Spock is here! This energetic game adds two new elements to the familiar Rock, Paper, Scissors, making it more strategic and, of course, more awesome.
+      
+      The Elements:
+      
+      Rock (✊): A symbol of strength, rock crushes scissors and lizard.
+      Paper (✋): The all-covering element, paper smothers rock and disproves Spock's logic.
+      Scissors (✌️): Sharp and precise, scissors cut paper and decapitate lizard.
+      Lizard (️): Quick and cunning, lizard devours paper and poisons Spock.
+      Spock (): Live long and prosper! Spock vaporizes rock and smashes scissors with his trusty Vulcan salute.
+      <br>  
+      How to Win:
+      
+      Simply throw down your hand gesture simultaneously with your opponent, following the dominance hierarchy:
+      
+      Rock crushes Scissors and Lizard
+      Paper covers Rock and disproves Spock
+      Scissors cut Paper and decapitate Lizard
+      Lizard eats Paper and poisons Spock
+      Spock vaporizes Rock and smashes Scissors
+      <br>
+      Ties:
+      
+      If you both throw the same symbol, it's a tie! Play again to determine the victor.
+      
+      Tips and Tricks:
+      
+      Mix it up! Don't fall into a pattern, or your opponent might catch on.
+      Read your opponent. Are they rock-heavy? Throw some paper their way!
+      Embrace the Spock. This powerful move can surprise your opponent.
+      Now go forth and conquer with Rock, Paper, Scissors, Lizard, Spock!</p>
+  </div>
+
+</div>
   <script src="assets/js/script.js"></script>
 </body>
 <footer>
