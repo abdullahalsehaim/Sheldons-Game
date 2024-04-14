@@ -52,6 +52,14 @@ function playGame(userChoice) {
     //console.log(outcome)
     outcomeSpan.textContent = outcome;
 
+    if (outcome === "You win!") {
+        increaseScore();
+    } else if (outcome === "You lose!") {
+        decreaseScore();
+    } else {
+        //do nothing
+    }
+
 
 
 }
@@ -62,5 +70,12 @@ function playGame(userChoice) {
 
 
 function increaseScore () {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 
+}
+
+function decreaseScore () {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = --oldScore;
 }
