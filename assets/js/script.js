@@ -65,16 +65,17 @@ function playGame(userChoice) {
 }
 
 /**
- * This function will compare the users and computers choice to determine who has won
+ * Increase the score when user beats the computer
  */
-
-
 function increaseScore () {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 
 }
 
+/**
+ * Decreases the score when the user loses to the computer
+ */
 function decreaseScore () {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = --oldScore;
