@@ -107,4 +107,14 @@ footer {
     cursor: pointer;
   }
 
-  
+  .rules {
+    display: flex;
+    justify-content: center;
+  }
+
+  #myBtn {
+    margin-bottom: 2.5%;
+    padding: 10px 20px;
+    width: 150px;
+    font-family: "Inknut Antiqua", serif;
+  }
