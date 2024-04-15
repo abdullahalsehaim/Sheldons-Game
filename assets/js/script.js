@@ -7,7 +7,7 @@ const userImage = document.getElementById("user-image");
 const computerImage = document.getElementById("computer-image");
 const outcomeSpan = document.getElementById("outcome");
 const choices = ["rock", "paper", "scissors", "spock", "lizard"];
-const reset = document.getElementById("reset");
+const resetButtons = document.getElementById("reset");
 
 
 /**
@@ -85,26 +85,28 @@ function decreaseScore () {
 /**
  * Creating a listener event for the rest button to return the game to the start
  
-for (reset) {
-    reset.addEventListener("click", function(){
+for (const resetButton of resetButtons) {
+    resetButton.addEventListener("click", function(){
         resetGame();
     })
 }
 */
 /**
  * 
- 
+*/ 
 function resetGame () {
-    userImage.src = "assets/images/rpsls.png";
+    userImage.src = "assets/images/rpsls.webp";
     userImage.alt = "Full game selection for user";
 
-    computerImage.src = "assets/images/rpsls.png";
+    computerImage.src = "assets/images/rpsls.webp";
     computerImage.alt = "Full game selection for computer";
 
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = 0;
+
+    outcomeSpan.textContent = ''
 }
-*/
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
