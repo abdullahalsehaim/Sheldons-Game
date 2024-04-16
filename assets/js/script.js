@@ -71,7 +71,6 @@ function playGame(userChoice) {
 function increaseScore () {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-
 }
 
 /**
