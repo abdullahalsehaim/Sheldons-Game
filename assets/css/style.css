@@ -57,6 +57,10 @@ strong {
     display: flex;
 }
 
+.result, .choice {
+    font-family: "Raleway", serif;
+}
+
 .choice img {
     height: 250px;
 }
