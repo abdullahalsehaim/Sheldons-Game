@@ -25,6 +25,9 @@ footer {
     background: #000000;
 }
 
+strong {
+    font-weight: bold;
+  }
 
 .container {
     display: flex;
@@ -90,6 +93,7 @@ footer {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    font-family: "Raleway", serif;
   }
 
   /* The Close Button */
