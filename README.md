@@ -41,9 +41,9 @@ under the "Computer Chose" heading.
 
 ## Testing
 
-Bugs
+### Bugs
 
-Validator Testing
+### Validator Testing
 
 ## Deployments
 -I deployed this website to github pages following the below steps
@@ -52,4 +52,16 @@ Validator Testing
     -Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
 -The live link can be found here: https://abdullahalsehaim.github.io/Sheldons-Game/
 
-Credits
+## Credits
+
+### Content
+-Used [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) to create Modal Feature.
+-Used [W3 Schools](https://www.w3schools.com/html/html_emojis.asp) to add Emojis to text section of Modal.
+
+### Media
+-Used image of all elements from [Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock).
+-Took images of individual elements from [PNGWNG](https://www.pngwing.com/en/free-png-ycasl).
+
+### Acknowlegdements
+-Javascript Code was taken from Code Institute's Rock, Paper, Scissors Game and Maths Game.
+-My mentor, Medale Oluwafemi, for his invaluable guidance.
