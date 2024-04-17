@@ -125,6 +125,26 @@ strong {
   }
 
   /* Media Queries for smaller screens */
-  @media screen {
+  @media (max-width: 400px) {
     
+    .choice img {
+      height: 100px;
+    }
+
+    .container button {
+      padding: 7px 7px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container button {
+      padding: 6px 6px;
+    }
+  }
+  
+  @media (max-width: 520px) {
+
+    .choice img {
+      height: 125px;
+    }
   }
