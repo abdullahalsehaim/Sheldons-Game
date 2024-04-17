@@ -8,7 +8,9 @@ const computerImage = document.getElementById("computer-image");
 const outcomeSpan = document.getElementById("outcome");
 const choices = ["rock", "paper", "scissors", "spock", "lizard"];
 const resetButtons = document.getElementById("reset");
-
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("myBtn");
+const span = document.getElementsByClassName("close")[0];
 
 /**
  * Adding a listener event for all game related buttons
@@ -33,9 +35,15 @@ function playGame(userChoice) {
 
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
-    //determineWinner(userChoice, computerChoice);
+    
+    determineWinner(userChoice, computerChoice);
+}
 
-    //let outcome = '';
+/**
+ * Function to determine which player has won
+ */
+
+function determineWinner (userChoice, computerChoice) {
 
     if (choices[userChoice] === choices[computerChoice]) {
         outcome = "It's a tie!"
@@ -50,8 +58,16 @@ function playGame(userChoice) {
         outcome = "You lose!";
     }
 
-    //console.log(outcome)
     outcomeSpan.textContent = outcome;
+
+    evaluateScore(outcome);
+}
+
+
+/**
+ * Determine whether to increase or decrease the score based on previous game outcome
+ */
+function evaluateScore (outcome) {
 
     if (outcome === "You win!") {
         increaseScore();
@@ -60,10 +76,8 @@ function playGame(userChoice) {
     } else {
         //do nothing
     }
-
-
-
 }
+
 
 /**
  * Increase the score when user beats the computer
@@ -81,17 +95,9 @@ function decreaseScore () {
     document.getElementById("score").innerText = --oldScore;
 }
 
+
 /**
- * Creating a listener event for the rest button to return the game to the start
- 
-for (const resetButton of resetButtons) {
-    resetButton.addEventListener("click", function(){
-        resetGame();
-    })
-}
-*/
-/**
- * 
+ * Returns the game to the starting phase
 */ 
 function resetGame () {
     userImage.src = "assets/images/rpsls.webp";
@@ -106,14 +112,6 @@ function resetGame () {
     outcomeSpan.textContent = ''
 }
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
