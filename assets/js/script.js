@@ -3,6 +3,7 @@
  */
 const buttons = document.getElementsByClassName("btn");
 const score = document.getElementById("score");
+const attempts = document.getElementById("attempts");
 const userImage = document.getElementById("user-image");
 const computerImage = document.getElementById("computer-image");
 const outcomeSpan = document.getElementById("outcome");
@@ -37,6 +38,8 @@ function playGame(userChoice) {
     computerImage.alt = choices[computerChoice];
     
     determineWinner(userChoice, computerChoice);
+    updateAttempts();
+    evaluateEvents();
 }
 
 /**
@@ -95,9 +98,35 @@ function decreaseScore () {
     document.getElementById("score").innerText = --oldScore;
 }
 
+/**
+ * Decreases the attempt number as the user plays the game 
+ */
+function updateAttempts () {
+    let startingRound = document.getElementById("attempts").innerText;
+    document.getElementById("attempts").innerText = --startingRound;
+}
 
 /**
- * Returns the game to the starting phase
+ * Produces an alert based on the score after the user has played all attempts
+*/ 
+function evaluateEvents () {
+    if (attempts === 0 && score === 0) {
+        alert("After 10 rounds the dust has settled.... User and Computer are evenly matched!");
+        resetGame();
+    } else if (attempts === 0 && score > 0) {
+        alert("Epic win for the user, computer has been defeated!")
+        resetGame();
+    } else if (attempts === 0 && score < 0) {
+        alert("Computer is triumphant, user loses this time!")
+        resetGame();
+    } else {
+        //Do nothing, game continues until attempt number is 0
+    }
+
+}
+
+/**
+ * Returns the game to the starting point
 */ 
 function resetGame () {
     userImage.src = "assets/images/rpsls.webp";
@@ -108,6 +137,9 @@ function resetGame () {
 
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = 0;
+
+    let startingRound = parseInt(document.getElementById("attempts").innerText);
+    document.getElementById("attempts").innerText = 10;
 
     outcomeSpan.textContent = ''
 }

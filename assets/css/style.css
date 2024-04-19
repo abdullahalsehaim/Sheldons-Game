@@ -21,6 +21,11 @@ h1 {
     font-family: "Inknut Antiqua", serif;
 }
 
+h3 {
+  text-align: center;
+  font-family: "Inknut Antiqua", serif;
+}
+
 footer {
     background: #000000;
 }
