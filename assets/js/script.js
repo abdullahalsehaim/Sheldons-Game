@@ -110,13 +110,17 @@ function updateAttempts () {
  * Produces an alert based on the score after the user has played all attempts
 */ 
 function evaluateEvents () {
-    if (attempts === 0 && score === 0) {
+    let remainingAttempts = parseInt(document.getElementById("attempts").innerText);
+    let currentScore = parseInt(document.getElementById("score").innerText);
+
+
+    if (remainingAttempts === 0 && currentScore === 0) {
         alert("After 10 rounds the dust has settled.... User and Computer are evenly matched!");
         resetGame();
-    } else if (attempts === 0 && score > 0) {
+    } else if (remainingAttempts === 0 && currentScore > 0) {
         alert("Epic win for the user, computer has been defeated!")
         resetGame();
-    } else if (attempts === 0 && score < 0) {
+    } else if (remainingAttempts === 0 && currentScore < 0) {
         alert("Computer is triumphant, user loses this time!")
         resetGame();
     } else {
