@@ -134,7 +134,6 @@ strong {
 
     h1 {
       margin-bottom: -20px;
-      font-size: 215%;
     }
 
     .user  {
@@ -148,11 +147,27 @@ strong {
     .container button {
       padding: 7px 7px;
     }
+
+    .result h3 {
+      font-size: 75%;
+    }
+
+
   }
 
   @media (max-width: 480px) {
+    
+    h1 {
+      font-size: 215%;
+    }
+    
     .container button {
       padding: 6px 6px;
+      font-size: 60%;
+    }
+
+    .computer h3 {
+      margin-left: 10px;
     }
   }
   
@@ -162,7 +177,7 @@ strong {
       height: 125px;
     }
 
-    img #computer-image {
-      margin-left: 10px;
+    img#computer-image {
+      margin-left: 30px;
     }
   }
