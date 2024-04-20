@@ -90,6 +90,7 @@ function increaseScore () {
     document.getElementById("score").innerText = ++oldScore;
 }
 
+
 /**
  * Decreases the score when the user loses to the computer
  */
@@ -98,6 +99,7 @@ function decreaseScore () {
     document.getElementById("score").innerText = --oldScore;
 }
 
+
 /**
  * Decreases the attempt number as the user plays the game 
  */
@@ -105,6 +107,7 @@ function updateAttempts () {
     let startingRound = document.getElementById("attempts").innerText;
     document.getElementById("attempts").innerText = --startingRound;
 }
+
 
 /**
  * Produces an alert based on the score after the user has played all attempts
@@ -129,6 +132,7 @@ function evaluateEvents () {
 
 }
 
+
 /**
  * Returns the game to the starting point
 */ 
@@ -145,7 +149,7 @@ function resetGame () {
     let startingRound = parseInt(document.getElementById("attempts").innerText);
     document.getElementById("attempts").innerText = 10;
 
-    outcomeSpan.textContent = ''
+    outcomeSpan.textContent = 'Pick an element below to start the game'
 }
 
 
