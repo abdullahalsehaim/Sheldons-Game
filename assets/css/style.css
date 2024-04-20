@@ -152,13 +152,17 @@ strong {
       font-size: 75%;
     }
 
+    .choice h3 {
+      font-size: 60%;
+    }
+
 
   }
 
   @media (max-width: 480px) {
     
     h1 {
-      font-size: 215%;
+      font-size: 200%;
     }
     
     .container button {
