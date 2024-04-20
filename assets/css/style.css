@@ -149,7 +149,7 @@ strong {
     }
 
     .result h3 {
-      font-size: 75%;
+      font-size: 70%;
     }
 
     .choice h3 {
@@ -172,6 +172,10 @@ strong {
 
     .computer h3 {
       margin-left: 10px;
+    }
+
+    .result h3 {
+      font-size: 70%;
     }
   }
   
