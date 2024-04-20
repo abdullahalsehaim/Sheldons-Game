@@ -131,6 +131,15 @@ strong {
 
   /* Media Queries for smaller screens */
   @media (max-width: 400px) {
+
+    h1 {
+      margin-bottom: -20px;
+      font-size: 215%;
+    }
+
+    .user  {
+      margin-right: 20px;
+    }
     
     .choice img {
       height: 100px;
@@ -151,5 +160,9 @@ strong {
 
     .choice img {
       height: 125px;
+    }
+
+    img #computer-image {
+      margin-left: 10px;
     }
   }
