@@ -51,12 +51,15 @@
     * Adding a multiplayer function where two people can play against each other
     * Developing on the rounds function to add more layers
     * Add an additional game message with more description
+
 ## Testing
 
 ### Basic Testing
 * I tested this game on Chrome, Edge, Safari and it worked on all of them
 * I checked the display of this game on all Phone screens and it displays well
 * I confirmed that the text, elements and background all contrast each other enough and are visibile.
+* I passed it through Lighthouse Dev Tools
+![Screenshot of light house developer tools](assets/images/lighthouse_report.PNG)
 
 ### Bugs
 * A bug I faced was the `determineWinner()` function not working in Javascript:
@@ -69,6 +72,11 @@
 
 
 ### Validator Testing
+* No errors appeared while using the W3 HTML Validator
+![Screenshot of HTML Validator indicating no errors](assets/images/html_validator.PNG)
+
+* No errors appeared while using the W3 CSS Validator
+![Screenshot of CSS Validator indicating no errors](assets/images/css_validator.PNG)
 
 ### Unfixed Bugs
 
