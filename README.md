@@ -46,15 +46,20 @@
 ![Screenshot of modal open and a brief description of the game](assets/images/game_rules_modal_open.PNG)
 
 ### Features left to implement
-
+* Additional features I will consider implementing in the future are:
+    * Adding a multiplayer function where two people can play against each other
+    * Developing on the rounds function to add more layers 
 ## Testing
+
+### Basic Testing
+* I tested this game on Chrome, Edge, Safari and it worked on all of them
 
 ### Bugs
 * A bug I faced was the determineWinner function not working in Javascript:
     * When first creating this function I gave it two inputs of `(choices[userChoice], choices[computerChoice])`.
     * My initial rationale behind this was due to choices being an array, and userChoice/computerChoice both being numerical inputs 
     indicating which of the array was selected that I needed both for the function to work.
-    * However the choices array was declared as a global const and is accessible throughout functions, 
+    * However the `choices` array was declared as a global const and is accessible throughout functions, 
     so I was able to exclude this in the input which was now `(userChoice, computerChoice)`.
     * After making this change I was able to simply call `choices` whenever I needed it in the function. 
 
