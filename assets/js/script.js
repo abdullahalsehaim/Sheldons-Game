@@ -118,14 +118,20 @@ function evaluateEvents () {
 
 
     if (remainingAttempts === 0 && currentScore === 0) {
-        alert("After 10 rounds the dust has settled.... User and Computer are evenly matched!");
-        resetGame();
+        setTimeout(() => {
+            alert("After 10 rounds the dust has settled.... User and Computer are evenly matched!");
+            resetGame();
+          }, 800);
     } else if (remainingAttempts === 0 && currentScore > 0) {
-        alert("Epic win for the user, computer has been defeated!");
-        resetGame();
+        setTimeout(() => {
+            alert("Epic win for the user, computer has been defeated!");
+            resetGame();
+          }, 800);
     } else if (remainingAttempts === 0 && currentScore < 0) {
-        alert("Computer is triumphant, user loses this time!")
-        resetGame();
+        setTimeout(() => {
+            alert("Computer is triumphant, user loses this time!");
+            resetGame();
+          }, 800);
     } else {
         //Do nothing, game continues until attempt number is 0
     }

@@ -1,6 +1,6 @@
 /* Importing Google Font*/
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+/*Basic styling elements*/
 * {
     box-sizing: border-box;
 }
@@ -33,7 +33,7 @@ footer {
 strong {
     font-weight: bold;
   }
-
+/*Styles for the game area*/
 .container {
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ strong {
 .choice h3 {
     text-align: center;
 }
-
+/* Styles for modal section */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */

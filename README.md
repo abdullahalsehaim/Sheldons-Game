@@ -59,6 +59,7 @@
 * I checked the display of this game on all Phone screens and it displays well
 * I confirmed that the text, elements and background all contrast each other enough and are visibile.
 * I passed it through Lighthouse Dev Tools
+
 ![Screenshot of light house developer tools](assets/images/lighthouse_report.PNG)
 
 ### Bugs
@@ -77,8 +78,6 @@
 
 * No errors appeared while using the W3 CSS Validator
 ![Screenshot of CSS Validator indicating no errors](assets/images/css_validator.PNG)
-
-### Unfixed Bugs
 
 
 ## Deployments
