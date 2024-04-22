@@ -50,8 +50,19 @@
 ## Testing
 
 ### Bugs
+* A bug I faced was the determineWinner function not working in Javascript:
+    * When first creating this function I gave it two inputs of `(choices[userChoice], choices[computerChoice])`.
+    * My initial rationale behind this was due to choices being an array, and userChoice/computerChoice both being numerical inputs 
+    indicating which of the array was selected that I needed both for the function to work.
+    * However the choices array was declared as a global const and is accessible throughout functions, 
+    so I was able to exclude this in the input which was now `(userChoice, computerChoice)`.
+    * After making this change I was able to simply call `choices` whenever I needed it in the function. 
+
 
 ### Validator Testing
+
+### Unfixed Bugs
+
 
 ## Deployments
 * I deployed this website to github pages following the below steps

@@ -153,17 +153,23 @@ function resetGame () {
 }
 
 
-// When the user clicks on the button, open the modal
+/**
+ * Below function opens the modal when it is clicked
+ */
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+/**
+ * When the user clicks on the x on the modal, it closes
+ */
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+/**
+ * Below function closes the modal when clicking anywhere outside the modal 
+ */
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
