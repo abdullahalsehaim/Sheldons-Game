@@ -96,6 +96,7 @@
 ### Media
 * Used image of all elements from [Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock).
 * Took images of individual elements from [PNGWNG](https://www.pngwing.com/en/free-png-ycasl).
+* Learned how to use the `setTimeout()` functon from [BYBY.Dev](https://byby.dev/js-wait-n-seconds)
 
 ### Acknowlegdements
 * Javascript Code was taken from Code Institute's Rock, Paper, Scissors Game and Maths Game.
