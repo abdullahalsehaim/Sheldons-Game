@@ -48,14 +48,17 @@
 ### Features left to implement
 * Additional features I will consider implementing in the future are:
     * Adding a multiplayer function where two people can play against each other
-    * Developing on the rounds function to add more layers 
+    * Developing on the rounds function to add more layers
+    * Add an additional game message with more description
 ## Testing
 
 ### Basic Testing
 * I tested this game on Chrome, Edge, Safari and it worked on all of them
+* I checked the display of this game on all Phone screens and it displays well
+* I confirmed that the text, elements and background all contrast each other enough and are visibile.
 
 ### Bugs
-* A bug I faced was the determineWinner function not working in Javascript:
+* A bug I faced was the `determineWinner()` function not working in Javascript:
     * When first creating this function I gave it two inputs of `(choices[userChoice], choices[computerChoice])`.
     * My initial rationale behind this was due to choices being an array, and userChoice/computerChoice both being numerical inputs 
     indicating which of the array was selected that I needed both for the function to work.
