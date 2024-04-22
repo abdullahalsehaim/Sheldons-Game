@@ -121,7 +121,7 @@ function evaluateEvents () {
         alert("After 10 rounds the dust has settled.... User and Computer are evenly matched!");
         resetGame();
     } else if (remainingAttempts === 0 && currentScore > 0) {
-        alert("Epic win for the user, computer has been defeated!")
+        alert("Epic win for the user, computer has been defeated!");
         resetGame();
     } else if (remainingAttempts === 0 && currentScore < 0) {
         alert("Computer is triumphant, user loses this time!")
