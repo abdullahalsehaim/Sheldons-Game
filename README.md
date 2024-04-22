@@ -92,11 +92,11 @@
 ### Content
 * Used [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) to create Modal Feature.
 * Used [W3 Schools](https://www.w3schools.com/html/html_emojis.asp) to add Emojis to text section of Modal.
+* Learned how to use the `setTimeout()` function from [BYBY.Dev](https://byby.dev/js-wait-n-seconds).
 
 ### Media
 * Used image of all elements from [Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock).
 * Took images of individual elements from [PNGWNG](https://www.pngwing.com/en/free-png-ycasl).
-* Learned how to use the `setTimeout()` function from [BYBY.Dev](https://byby.dev/js-wait-n-seconds)
 
 ### Acknowlegdements
 * Javascript Code was taken from Code Institute's Rock, Paper, Scissors Game and Maths Game.
