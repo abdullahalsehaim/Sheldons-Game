@@ -111,6 +111,7 @@ function updateAttempts () {
 
 /**
  * Produces an alert based on the score after the user has played all attempts
+ * Used set timeout so that the rounds and results do not instantly reset as the attempts hits 0 and user can see the final game result
 */ 
 function evaluateEvents () {
     let remainingAttempts = parseInt(document.getElementById("attempts").innerText);
